@@ -1,4 +1,5 @@
 export function ListItem({id,title,completed,removeTodo,toggleTodo}){
+    
     return (
         <li>
         <label>
@@ -11,7 +12,7 @@ export function ListItem({id,title,completed,removeTodo,toggleTodo}){
         </label>
         <button 
             className="btn btn-danger" 
-            onClick={()=>{removeTodo(id)}}
+            onClick={()=>{removeTodo(id,completed)}}
         >
             Delete
         </button>
